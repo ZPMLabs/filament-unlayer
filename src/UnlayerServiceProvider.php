@@ -1,10 +1,11 @@
 <?php
 
-namespace InfinityXTech\FilamentUnlayer;
+namespace ZPMLabs\FilamentUnlayer;
 
 use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Assets\Asset;
 use Filament\Support\Assets\Css;
+use Filament\Support\Assets\Js;
 use Filament\Support\Facades\FilamentAsset;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
@@ -50,7 +51,7 @@ class UnlayerServiceProvider extends PackageServiceProvider
 
     protected function getAssetPackageName(): ?string
     {
-        return 'InfinityXTech/filament-unlayer';
+        return 'ZPMLabs/filament-unlayer';
     }
 
     /**

@@ -1,28 +1,29 @@
 {
-    "name": "infinityxtech/filament-unlayer",
+    "name": "zpmlabs/filament-unlayer",
+    "version": "2.0.0",
     "description": "Filament wrapper for unlayer editor.",
     "keywords": [
-        "InfinityXTech",
+        "ZPM Labs",
         "laravel",
         "filament-unlayer"
     ],
-    "homepage": "https://github.com/InfinityXTech/filament-unlayer",
+    "homepage": "https://github.com/sasaorasanin/filament-unlayer",
     "support": {
-        "issues": "https://github.com/InfinityXTech/filament-unlayer/issues",
-        "source": "https://github.com/InfinityXTech/filament-unlayer"
+        "issues": "https://github.com/sasaorasanin/filament-unlayer/issues",
+        "source": "https://github.com/sasaorasanin/filament-unlayer"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": "InfinityXTech",
-            "email": "business@infinity-x.tech",
+            "name": "Sasa Orasanin",
+            "email": "development@zpmlabs.com",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.1",
-        "filament/filament": "^3.0",
-        "filament/forms": "^3.0",
+        "filament/filament": "^4.0",
+        "filament/forms": "^4.0",
         "spatie/laravel-package-tools": "^1.15.0"
     },
     "require-dev": {
@@ -40,12 +41,12 @@
     },
     "autoload": {
         "psr-4": {
-            "InfinityXTech\\FilamentUnlayer\\": "src/"
+            "ZPMLabs\\FilamentUnlayer\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "InfinityXTech\\FilamentUnlayer\\Tests\\": "tests/"
+            "ZPMLabs\\FilamentUnlayer\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -65,13 +66,13 @@
     "extra": {
         "laravel": {
             "providers": [
-                "InfinityXTech\\FilamentUnlayer\\UnlayerServiceProvider"
+                "ZPMLabs\\FilamentUnlayer\\UnlayerServiceProvider"
             ],
             "aliases": {
-                "FilamentUnlayer": "InfinityXTech\\FilamentUnlayer\\Facades\\Unlayer"
+                "FilamentUnlayer": "ZPMLabs\\FilamentUnlayer\\Facades\\Unlayer"
             }
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true
 }

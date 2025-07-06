@@ -1,6 +1,6 @@
 <?php
 
-namespace InfinityXTech\FilamentUnlayer\Services;
+namespace ZPMLabs\FilamentUnlayer\Services;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;

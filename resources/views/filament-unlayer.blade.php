@@ -1,12 +1,10 @@
-@use('Filament\Support\Facades\FilamentAsset')
-
 <x-dynamic-component 
     :component="$getFieldWrapperView()"
     :field="$field"
 >
     <div
-        ax-load
-        ax-load-src="{{ FilamentAsset::getAlpineComponentSrc('filament-unlayer', 'InfinityXTech/filament-unlayer') }}"
+        x-load
+        x-load-src="{{ \Filament\Support\Facades\FilamentAsset::getAlpineComponentSrc('filament-unlayer', 'ZPMLabs/filament-unlayer') }}"
         x-data="initUnlayer({
             state: $wire.entangle('{{ $getStatePath() }}'),
             displayMode: '{{ $getDisplayMode() }}',

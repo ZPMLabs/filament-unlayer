@@ -1,6 +1,6 @@
 <?php
 
-namespace InfinityXTech\FilamentUnlayer\Forms\Components;
+namespace ZPMLabs\FilamentUnlayer\Forms\Components;
 
 use Filament\Forms\Components\Field;
 
@@ -18,7 +18,7 @@ class Unlayer extends Field
     // protected bool $hasDefaultState = true;
     protected $height = '70svh';
 
-    public static function make(string $name): static
+    public static function make(string|null $name = null): static
     {
         $static = app(static::class, ['name' => $name]);
         $static->configure();
