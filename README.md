@@ -25,7 +25,7 @@ composer require ZPMLabs/filament-unlayer
 
 ### Version Compatibility
 - **Filament 4.x** → Use this version (2.x)
-- **Filament 3.x** → Use version 1.x: `composer require InfinityXTech/filament-unlayer`
+- **Filament 3.x** → Use version 1.x: `composer require ZPMLabs/filament-unlayer:^1.0`
 
 Create a cast within your model:
 
