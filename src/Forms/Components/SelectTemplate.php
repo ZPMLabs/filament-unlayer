@@ -4,19 +4,24 @@ namespace ZPMLabs\FilamentUnlayer\Forms\Components;
 
 use Filament\Forms\Components\Select;
 use Filament\Schemas\Components\Utilities\Set;
-use ZPMLabs\FilamentUnlayer\Services\GetTemplates;
 
 class SelectTemplate extends Select
 {
     protected string $view = 'filament-unlayer::select-template';
+
     protected string $type = 'email';
+
     protected string $collection = '';
+
     protected string $sortBy = 'recent';
+
     protected bool $isPremium = false;
+
     protected int $limit = 20;
+
     protected int $offset = 0;
 
-    public static function make(string|null $name = null): static
+    public static function make(?string $name = null): static
     {
         $static = app(static::class, ['name' => $name]);
         $static->configure();

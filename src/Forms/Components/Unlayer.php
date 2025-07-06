@@ -18,7 +18,7 @@ class Unlayer extends Field
     // protected bool $hasDefaultState = true;
     protected $height = '70svh';
 
-    public static function make(string|null $name = null): static
+    public static function make(?string $name = null): static
     {
         $static = app(static::class, ['name' => $name]);
         $static->configure();

@@ -33,7 +33,7 @@ class GetTemplates
         $templates = $result['data'] ?? [];
 
         return collect($templates)->mapWithKeys(fn (array $template) => [
-            $template['slug'] => view('filament-unlayer::unlayer-template')->with('template', $template)->render()
+            $template['slug'] => view('filament-unlayer::unlayer-template')->with('template', $template)->render(),
         ])->toArray();
     }
 
