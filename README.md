@@ -11,7 +11,7 @@ This is a filament wrapper for unlayer editor with custom select field with unla
 
 ## Requirements
 
-- PHP 8.1+
+- PHP 8.2+
 - Laravel 10+
 - Filament 4.x
 
